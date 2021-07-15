@@ -1,0 +1,173 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------
+   Header Section
+------------------- */
+
+header{
+    background-color: #2D25A0;
+    width: 100%;
+    height: 677px;
+}
+.header-texts{
+    color:white;
+    width: 50%;
+    margin-top: 100px;
+}
+.header-image img{
+    width:556.01px;
+    height: 438px;
+    margin-top: 125px;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* -----------------
+    Button Styles
+------------------- */
+.watch-button{
+    Width: 168px;
+    Height: 44px;
+    Padding: 10px 24px;
+    background-color:#E02C6D;
+    color:white;
+    weight: 500;
+    transition: width 3s, height 3s;
+    
+}
+.watch-button:hover{
+    Width: 252px;
+    Height: 66px;
+    Padding: 10px 24px;
+    font-size: 25px;
+}
+
+/* -----------------
+    Players Section
+------------------- */
+.top-players{
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.player{
+    Width 330px;
+    Height 456px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+.players .player .thumbnail img{
+
+    width: 300px;
+    height: 256px;
+    
+}
+
+/* -----------------
+    Highlights Section
+------------------- */
+.h-text-properties{
+    margin-left: 70px;
+}
+.h-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 100px;
+    margin-right: 100px;
+   
+}
+.highlights-img img{
+    width: 100%;
+}
+.highlights-contents{
+    Width 456px;
+    Height 330px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+/* -----------------
+    Footer Section
+------------------- */
+.footer-icon{
+    transform: scale(0.6);
+}
+.social-icons{
+    transform: scale(0.6);
+    
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 158px;
+    margin-bottom: 63px;
+    
+}
+
+/* -----------------
+    Media Queries
+------------------- */
+/* Mobile Devices */
+@media only screen and(max-width:688px) {
+   
+    header{
+        background-color: #2D25A0;
+        width: 360px;
+        height: 695px;
+    }
+    .header-content{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: left;
+    
+    }
+    .header-texts{
+        color:white;
+        font-size: 36px;
+    
+    }
+    .header-image img{
+        width: 329px;
+        height: 259.17px;
+        margin-top: 374px;
+        margin-left: 344px;
+    }
+    .top-players{
+        width:100%;
+        margin: 5px;
+        padding: 2px;
+    }
+    .player{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
